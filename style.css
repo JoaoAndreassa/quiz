@@ -1,0 +1,48 @@
+/* Estilos CSS para a aparência do quiz */
+body {
+  background-color: rgb(87, 77, 77);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#body {
+  background-color: aqua;
+  width: 600px;
+  height: 700px;
+
+  text-align: center;
+}
+
+/* Estilo dos círculos preenchíveis */
+#choices li {
+  list-style-type: none;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+#choices li:before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #000;
+  border-radius: 50%;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+/* Estilo do círculo preenchido */
+#choices li.selected:before {
+  background-color: #000;
+}
+
+#choices label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* Estilo dos elementos <input> */
+#choices input[type="radio"] {
+  vertical-align: middle;
+  margin-right: 5px;
+}
